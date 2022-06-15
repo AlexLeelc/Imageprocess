@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1406</width>
+    <height>993</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{ background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(255,250,250), stop:0.3 rgb(248,248,255), stop:1 rgb(245,245 ,245));;}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QPushButton" name="pushButton_gray">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>150</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <property name="text">
+        <string>灰度化</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>80</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <property name="text">
+        <string>选择图片</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_origin">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>710</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <property name="text">
+        <string>复原</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_junzhi_2">
+       <property name="geometry">
+        <rect>
+         <x>849</x>
+         <y>540</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <property name="text">
+        <string>边缘检测</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_junzhi">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>230</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <property name="text">
+        <string>均值滤波</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_save">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>780</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(255 ,64 ,64), stop:0.3 rgb(238, 59, 59), stop:1 rgb(238, 44, 44));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(255 ,106 ,106), stop:0.3 rgb(238, 59, 59), stop:1 rgb(238, 44, 44));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(255 ,64 ,64), stop:0.3 rgb(238, 59, 59), stop:1 rgb(238, 44, 44));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <property name="text">
+        <string>保存图片</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Otsu">
+       <property name="geometry">
+        <rect>
+         <x>849</x>
+         <y>470</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <property name="text">
+        <string>Otsu算法</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_status">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>930</y>
+         <width>591</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{ 
+background:transparent
+        }</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_zhongzhi">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>300</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <property name="text">
+        <string>中值滤波</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_show">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>781</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*border:2px solid rgb(108,231,252);*/
+            border:5px;  
+            border-radius:20px;
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(230,230,230), stop:0.3 rgb(229,229,229), stop:1 rgb(230,230 ,230));;
+}
+QWidget:hover{
+            color: rgb(235, 235, 235); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(235,235,235), stop:0.3 rgb(235,235,235), stop:1 rgb(235,235,235));
+            border:5px;  
+            border-radius:20px; /*border-radius控制圆角大小*/
+            padding:2px 4px; </string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_other">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>490</y>
+         <width>781</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*border:2px solid rgb(108,231,252);*/
+            border:5px;  
+            border-radius:20px;
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(230,230,230), stop:0.3 rgb(229,229,229), stop:1 rgb(230,230 ,230));;
+}
+QWidget:hover{
+            color: rgb(235, 235, 235); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(235,235,235), stop:0.3 rgb(235,235,235), stop:1 rgb(235,235,235));
+            border:5px;  
+            border-radius:20px; /*border-radius控制圆角大小*/
+            padding:2px 4px; </string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_contrast">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>640</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <property name="text">
+        <string>对比</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>1050</x>
+         <y>230</y>
+         <width>331</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{ 
+            border:5px;  
+            border-radius:20px;
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(230,230,230), stop:0.3 rgb(229,229,229), stop:1 rgb(230,230 ,230));;
+}
+QWidget:hover{
+            color: rgb(235, 235, 235); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(235,235,235), stop:0.3 rgb(235,235,235), stop:1 rgb(235,235,235));
+            border:5px;  
+            border-radius:20px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>调节Gamma值：：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_gamma">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>30</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_gamma">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>80</y>
+          <width>261</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: rgb(255, 255, 255);
+        height:4px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:black;
+        height:4px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(D:/lc/QT5-Image-and-video-processing-software-master/images/slide.png);
+        margin: -8 0px;
+    }
+</string>
+        </property>
+        <property name="minimum">
+         <number>50</number>
+        </property>
+        <property name="maximum">
+         <number>150</number>
+        </property>
+        <property name="singleStep">
+         <number>5</number>
+        </property>
+        <property name="sliderPosition">
+         <number>100</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_gamma_confirm">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>130</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+        </property>
+        <property name="text">
+         <string>确认</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_gamma_cancel">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>130</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+        </property>
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>1050</x>
+         <y>80</y>
+         <width>331</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{ 
+            border:5px;  
+            border-radius:20px;
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(230,230,230), stop:0.3 rgb(229,229,229), stop:1 rgb(230,230 ,230));;
+}
+QWidget:hover{
+            color: rgb(235, 235, 235); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(235,235,235), stop:0.3 rgb(235,235,235), stop:1 rgb(235,235,235));
+            border:5px;  
+            border-radius:20px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <widget class="QSlider" name="horizontalSlider">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>60</y>
+          <width>261</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: rgb(255, 255, 255);
+        height:4px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:black;
+        height:4px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(D:/lc/QT5-Image-and-video-processing-software-master/images/slide.png);
+        margin: -8 0px;
+    }
+</string>
+        </property>
+        <property name="minimum">
+         <number>-300</number>
+        </property>
+        <property name="maximum">
+         <number>300</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>调节亮度：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_light">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>25</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_4" native="true">
+       <property name="geometry">
+        <rect>
+         <x>1050</x>
+         <y>470</y>
+         <width>331</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{ 
+            border:5px;  
+            border-radius:20px;
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(230,230,230), stop:0.3 rgb(229,229,229), stop:1 rgb(230,230 ,230));;
+}
+QWidget:hover{
+            color: rgb(235, 235, 235); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(235,235,235), stop:0.3 rgb(235,235,235), stop:1 rgb(235,235,235));
+            border:5px;  
+            border-radius:20px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+       </property>
+       <widget class="QLabel" name="label_track_1">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>边缘追踪：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_track_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>80</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>检测阈值：</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_track_1">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>130</y>
+          <width>261</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: rgb(255, 255, 255);
+        height:4px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:black;
+        height:4px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(D:/lc/QT5-Image-and-video-processing-software-master/images/slide.png);
+        margin: -8 0px;
+    }
+</string>
+        </property>
+        <property name="minimum">
+         <number>0</number>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="singleStep">
+         <number>1</number>
+        </property>
+        <property name="sliderPosition">
+         <number>128</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_track_confirm">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>280</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+        </property>
+        <property name="text">
+         <string>确认</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_track_cancel">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>280</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+            color: rgb(255, 255, 255);
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(166,164,208), stop:0.3 rgb(171,152,230), stop:1 rgb(152,140,220));
+            border:1px;
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px;  
+        }
+        QPushButton:hover{
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(130,120,226), stop:0.3 rgb(120,130,230), stop:1 rgb(125,140,226));
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }
+        QPushButton:pressed{    
+            color: rgb(255, 255, 255); 
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(240,156,121), stop:0.3 rgb(220,160,140), stop:1 rgb(230,140,120));  
+            border:1px;  
+            border-radius:5px; /*border-radius控制圆角大小*/
+            padding:2px 4px; 
+        }</string>
+        </property>
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_track_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>230</y>
+          <width>261</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: rgb(255, 255, 255);
+        height:4px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:black;
+        height:4px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+        border:1px;
+        border-radius:5px; /*border-radius控制圆角大小*/
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(D:/lc/QT5-Image-and-video-processing-software-master/images/slide.png);
+        margin: -8 0px;
+    }
+</string>
+        </property>
+        <property name="minimum">
+         <number>0</number>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="singleStep">
+         <number>1</number>
+        </property>
+        <property name="sliderPosition">
+         <number>128</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_track_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>180</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>跟踪阈值：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_track_2_num">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>80</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_track_3_num">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>180</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </widget>
+      <zorder>widget_2</zorder>
+      <zorder>pushButton_gray</zorder>
+      <zorder>pushButton</zorder>
+      <zorder>pushButton_origin</zorder>
+      <zorder>pushButton_junzhi_2</zorder>
+      <zorder>pushButton_junzhi</zorder>
+      <zorder>pushButton_save</zorder>
+      <zorder>pushButton_Otsu</zorder>
+      <zorder>label_status</zorder>
+      <zorder>pushButton_zhongzhi</zorder>
+      <zorder>label_show</zorder>
+      <zorder>label_other</zorder>
+      <zorder>pushButton_contrast</zorder>
+      <zorder>widget_3</zorder>
+      <zorder>widget_4</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="action_New">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/filenew.png</normaloff>:/myImage/images/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建文件(&amp;N)</string>
+   </property>
+   <property name="toolTip">
+    <string>新建文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_Dock">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/zoom-in.png</normaloff>:/myImage/images/zoom-in.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示Dock(&amp;D)</string>
+   </property>
+   <property name="toolTip">
+    <string>显示Dock</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/picture.png</normaloff>:/myImage/images/picture.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开图片(&amp;O)</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/save.png</normaloff>:/myImage/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存图片(&amp;S)</string>
+   </property>
+   <property name="toolTip">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_Asave">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/filesaveas.png</normaloff>:/myImage/images/filesaveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为(&amp;A)</string>
+   </property>
+   <property name="toolTip">
+    <string>另存为</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/about.png</normaloff>:/myImage/images/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于(&amp;A)</string>
+   </property>
+   <property name="toolTip">
+    <string>关于</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_Help">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/help.png</normaloff>:/myImage/images/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>帮助(&amp;H)</string>
+   </property>
+   <property name="toolTip">
+    <string>帮助</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_L">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/zh-en.png</normaloff>:/myImage/images/zh-en.png</iconset>
+   </property>
+   <property name="text">
+    <string>切换中英文(&amp;L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="action_L_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/left.png</normaloff>:/myImage/images/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>左对齐(&amp;L)</string>
+   </property>
+  </action>
+  <action name="action_R">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/right.png</normaloff>:/myImage/images/right.png</iconset>
+   </property>
+   <property name="text">
+    <string>右对齐(&amp;R)</string>
+   </property>
+  </action>
+  <action name="action_C">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/center.png</normaloff>:/myImage/images/center.png</iconset>
+   </property>
+   <property name="text">
+    <string>居中(&amp;C)</string>
+   </property>
+  </action>
+  <action name="action_V">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/video.png</normaloff>:/myImage/images/video.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开视频(&amp;V)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_H">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/gray.png</normaloff>:/myImage/images/gray.png</iconset>
+   </property>
+   <property name="text">
+    <string>灰度化(&amp;H)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_J">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/junzhi.png</normaloff>:/myImage/images/junzhi.png</iconset>
+   </property>
+   <property name="text">
+    <string>均值滤波(&amp;J)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="action_B">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/bianyuan.png</normaloff>:/myImage/images/bianyuan.png</iconset>
+   </property>
+   <property name="text">
+    <string>边缘检测(&amp;B)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action_Y">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/fuhe.png</normaloff>:/myImage/images/fuhe.png</iconset>
+   </property>
+   <property name="text">
+    <string>边缘+原图(&amp;Y)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action_G">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/myImage/images/gamma.png</normaloff>:/myImage/images/gamma.png</iconset>
+   </property>
+   <property name="text">
+    <string>伽马变换(&amp;G)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
